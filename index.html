@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<center>
+<html>
+    <head>
+        <title>
+            Project join function
+        </title>
+    </head>
+    <body>
+        <h1>
+            Making Paragraphs
+        </h1>
+        <section>
+        <h2>
+            Paragraph 1 
+            <div>
+                <span>
+                    1.
+                </span>
+                <input type="text" id="idp1in1" placeholder="Input box 1" />
+                <br>
+                <span>
+                    2.
+                </span>
+                <input type="text" id="idp1in2" placeholder="Input box 2" />
+                <br>
+                <span>
+                    3.
+                </span>
+                <input type="text" id="idp1in3" placeholder="Input box 3" />
+                <br>
+                <span>
+                    4.
+                </span>
+                <input type="text" id="idp1in4" placeholder="Input box 4" />
+                <br>
+                <span>
+                    5.
+                </span>
+                <input type="text" id="idp1in5" placeholder="Input box 5" />
+                <br>
+                <span>
+                    6.
+                </span>
+                <input type="text" id="idp1in6" placeholder="Input box 6" />
+                <br>
+            </div>
+            <input type="button" onclick="pa1()" value=" get Paragraph 1 " >
+        </h2>
+            <br>
+            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            Paragraph 2
+            <div>
+                <span>
+                    1.
+                </span>
+                <input type="text" id="idp2in1" placeholder="Input box 1" />
+                <br>
+                <span>
+                    2.
+                </span>
+                <input type="text" id="idp2in2" placeholder="Input box 2" />
+                <br>
+                <span>
+                    3.
+                </span>
+                <input type="text" id="idp2in3" placeholder="Input box 3" />
+                <br>
+                <span>
+                    4.
+                </span>
+                <input type="text" id="idp2in4" placeholder="Input box 4" />
+                <br>
+                <span>
+                    5.
+                </span>
+                <input type="text" id="idp2in5" placeholder="Input box 5" />
+                <br>
+                <span>
+                    6.
+                </span>
+                <input type="text" id="idp2in6" placeholder="Input box 6" />
+                <br>
+                </div>
+                <input type="button" onclick="pa2()" value=" get Paragraph 2 " >
+            </section>
+            <br> <br> <br> 
+            <h2 id="p1" >
+
+            </h2>
+            <br> <br> <br> 
+            <h2 id="p2" >
+
+            </h2>
+        <style>
+            .left {
+                text-align:left;
+            }
+            .right {
+                text-align: right;
+            }
+            #le {
+                padding: bottom 10px;
+            }
+            #rig {
+            padding: top 10px;
+            }
+
+        </style>
+        <script>
+         function pa1()
+          {
+            var inputp1 = [];
+            for ( var i = 1 ; i<=6; i++ )
+          {
+            inputp1.push(document.getElementById("idp1in" + i).value);
+         }
+             inputp1.join(". ");
+             document.getElementById("p1").innerHTML = inputp1;
+         }
+        
+         function pa2()
+          {
+            var inputp2 = [];
+            for ( var k = 1 ; k<=6; k++ )
+          {
+            inputp2.push(document.getElementById("idp2in" + k).value);
+         }
+             inputp2.join(". ");
+             document.getElementById("p2").innerHTML = inputp2;
+         }
+
+        </script>
+    </body>
+</html>
+</center>
